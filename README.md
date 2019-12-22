@@ -3,7 +3,7 @@
 
 ## 编译命令
 ```
-g++ -fopenmp -o countri countri_share.cpp -O3 -std=c++17
+g++ -fopenmp -o countri countri.cpp -O3 -std=c++17
 ```
 
 ## 命题来源
