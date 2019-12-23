@@ -6,8 +6,18 @@
 g++ -fopenmp -o countri countri.cpp -O3 -std=c++17
 ```
 
+## 运行命令
+```
+./countri path/dataname.xxx
+```
+
 ## 命题来源
 请参见 https://www.datafountain.cn/competitions/349/datasets
+
+## 数据来源
+数据文件格式仅限32位整型二进制文件
++ 来源一：https://snap.stanford.edu/data/ 相应txt格式文件可下载本人 txt2bin 工具进行转换
++ 来源二：用本人 kron_generator 工具生成二进制数据集
 
 ## 算法步骤
 + 将图数据载入为数组
