@@ -426,11 +426,14 @@ int main(int argc, char const **argv)
             {
                 c_loc = row_start_pt[*k];
                 cl_n = row_start_pt[*k+1];
+                if (c_loc == cl_n)
+                    continue;
+                
                 v_cn = *(cl_n-1);
 
                 if (v_rn < v_cn)
                 {
-                    while (*c_loc < v_rn)
+                    while (*c_loc <= v_rn)
                         nti += *(vl_ini + *(c_loc++));
                 }
                 else
